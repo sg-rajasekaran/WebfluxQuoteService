@@ -15,17 +15,17 @@ import java.time.Instant;
 public class Quote {
     private static final MathContext MATH_CONTEXT = new MathContext(2);
 
-    private String sticker;
+    private String ticker;
     private BigDecimal price;
     private Instant instant;
 
-    public Quote(String sticker, BigDecimal price) {
-        this.sticker = sticker;
+    public Quote(String ticker, BigDecimal price) {
+        this.ticker = ticker;
         this.price = price;
     }
 
-    public Quote(String sticker, Double price) {
-        this.sticker = sticker;
+    public Quote(String ticker, Double price) {
+        this.ticker = ticker;
         this.price = new BigDecimal(price, MATH_CONTEXT);
     }
 
